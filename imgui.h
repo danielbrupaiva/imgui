@@ -303,7 +303,7 @@ IM_MSVC_RUNTIME_CHECKS_RESTORE
 namespace ImGui
 {
 
-    struct Spec_{
+    struct Spec{
         char* title;
         ImVec2 window_size;
         ImVec4 bg_color;
