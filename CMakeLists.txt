@@ -6,10 +6,6 @@ if(CMAKE_BINARY_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
 endif()
 #---------------------
 set(PROJECT_NAME imgui)
-project(${PROJECT_NAME} C CXX)
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -static")
-set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS}")
 message("${BoldGreen}-- ${PROJECT_NAME} BUILD ${ColourReset}")
 #---------------------
 set(SOURCES
@@ -31,11 +27,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
         backends/
         misc/cpp
 )
-include(GNUInstallDirs)
-#---------------------
-# PKG CONFIG
-#---------------------
-find_package(PkgConfig REQUIRED)
+
 #---------------------
 # OPEN GL
 #---------------------
