@@ -56,7 +56,7 @@ if(OPENGL3)
         set(Libdrm_LIBRARY ${CMAKE_SYSROOT}/usr/lib/${TARGET_ARCHITECTURE}/libdrm.so)
 
         set(gbm_INCLUDE_DIR ${GL_INC_DIR})
-        set(gbm_LIBRARY ${CMAKE_SYSROOT}/usr/lib/libgbm.so)
+        set(gbm_LIBRARY ${CMAKE_SYSROOT}/usr/lib/${TARGET_ARCHITECTURE}/libgbm.so)
     endif ()
 
     find_package(OpenGL REQUIRED)
