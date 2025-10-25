@@ -39,7 +39,7 @@ endif ()
 #---------------------
 if (GLFW)
     message("${BoldYellow}-- GLFW: ${GLFW}${ColourReset}")
-    find_package(glfw3 REQUIRED)
+    find_package(glfw3)
     if (NOT glfw3_FOUND)
         message("${BoldYellow}-- GLFW NOT FOUND${ColourReset}")
         message("${BoldYellow}-- BUILDING FROM SRC${ColourReset}")
