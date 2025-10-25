@@ -61,9 +61,3 @@ if (GLFW)
     endif ()
     target_link_libraries(${PROJECT_NAME} PUBLIC glfw)
 endif ()
-
-#---------------------
-# STB Image
-#---------------------
-find_package(stb REQUIRED)
-target_link_libraries(${PROJECT_NAME} PUBLIC stb::stb)
