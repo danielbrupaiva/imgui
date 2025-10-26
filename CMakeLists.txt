@@ -38,7 +38,6 @@ endif ()
 # GLFW
 #---------------------
 if (GLFW)
-    message("${BoldYellow}-- GLFW: ${GLFW}${ColourReset}")
     find_package(glfw3 QUIET)
     if (NOT glfw3_FOUND)
         message("${BoldYellow}-- GLFW NOT FOUND${ColourReset}")
